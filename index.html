@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="subtitle">Role / tagline (e.g., Software Engineer)</p>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/JiaminYao">GitHub</a>
+        <a href="mailto:you@email.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        Short intro: what you do, what you’re looking for, key strengths.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Featured Projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/JiaminYao/BreastCancerPrediction">Breast Cancer Prediction</a> —
+          Machine Learning Project.
+        </li>
+        <li>
+          <a href="https://github.com/JiaminYao/ChatbotPrediction">Chatbot User Preference Prediction</a> —
+          Deep Learning Project.
+        </li>
+        <li>
+            <a href="https://github.com/JiaminYao/ImageImprove">Image Improve</a> —
+            Digital Image Processing Project.
+        </li>
+        <li>
+            <a href="https://github.com/JiaminYao/TravelRoutePlaner">Travel Route Planer</a> —
+            Advanced Algorithm Project.
+        </li>
+      </ul>
+      <p><a class="button" href="projects.html">See all projects</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="y"></span> Your Name</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
