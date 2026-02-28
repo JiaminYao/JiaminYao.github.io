@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Jiamin Yao</h1>
+      <h1>Jiamin Yao <span class="badge-open">Open to Work</span></h1>
       <p class="subtitle">ML/AI Engineer</p>
       <p class="contact-info">Greater St. Louis, open to relocation</p>
       <p class="contact-info">
@@ -27,8 +27,8 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
       </nav>
     </div>
@@ -51,55 +51,40 @@
       <h2>Skills</h2>
       <div class="skill-group">
         <h3>Languages</h3>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Java</span>
-          <span class="tag">C/C++</span>
-          <span class="tag">C#</span>
-          <span class="tag">JavaScript</span>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">C#</span>
+          <span class="chip">C/C++</span>
+          <span class="chip">Bash</span>
+          <span class="chip">SQL</span>
         </div>
       </div>
       <div class="skill-group">
-        <h3>Frameworks & Libraries</h3>
-        <div class="tags">
-          <span class="tag">PyTorch</span>
-          <span class="tag">TensorFlow</span>
-          <span class="tag">Keras</span>
-          <span class="tag">JAX</span>
+        <h3>Frameworks</h3>
+        <div class="chips">
+          <span class="chip">SvelteKit</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">TailwindCSS</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">Transformers</span>
         </div>
       </div>
       <div class="skill-group">
-        <h3>LLM & Model Compression</h3>
-        <div class="tags">
-          <span class="tag">Quantization</span>
-          <span class="tag">Pruning</span>
-          <span class="tag">SVD</span>
-          <span class="tag">LoRA</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Architectures & Techniques</h3>
-        <div class="tags">
-          <span class="tag">Transformers</span>
-          <span class="tag">Attention Mechanisms</span>
-          <span class="tag">Encoder–Decoder Models</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Data & Analytics</h3>
-        <div class="tags">
-          <span class="tag">Model Evaluation</span>
-          <span class="tag">Statistical Analysis</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Excel VBA</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Web & Tools</h3>
-        <div class="tags">
-          <span class="tag">Next.js</span>
-          <span class="tag">Git</span>
-          <span class="tag">Linux</span>
+        <h3>Tools</h3>
+        <div class="chips">
+          <span class="chip">Docker</span>
+          <span class="chip">Git</span>
+          <span class="chip">PocketBase</span>
+          <span class="chip">SQLite</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">OpenCV</span>
+          <span class="chip">MATLAB</span>
         </div>
       </div>
     </section>
@@ -146,6 +131,17 @@
       </div>
     </section>
 
+    <!-- Publications -->
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <h3><a href="https://arxiv.org/abs/2602.18420">SPQ: An Ensemble Technique for Large Language Model Compression</a></h3>
+        </div>
+        <p class="muted">Accepted to LREC 2026 Main Conference · Oral Presentation</p>
+      </div>
+    </section>
+
     <!-- Projects -->
     <section id="projects" class="card">
       <h2>Projects</h2>
@@ -178,17 +174,6 @@
       </div>
     </section>
 
-    <!-- Publications -->
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <div class="entry">
-        <div class="entry-header">
-          <h3><a href="https://arxiv.org/abs/2602.18420">SPQ: An Ensemble Technique for Large Language Model Compression</a></h3>
-        </div>
-        <p class="muted">Accepted to LREC 2026 Main Conference · Oral Presentation</p>
-      </div>
-    </section>
-
     <!-- Education -->
     <section id="education" class="card">
       <h2>Education</h2>
@@ -198,13 +183,15 @@
           <span class="muted">Jan 2024 – Dec 2025</span>
         </div>
         <p class="muted">Southern Illinois University Edwardsville</p>
+        <p class="muted">Coursework: Algorithms, Machine Learning, Deep Learning, Artificial Intelligence, Digital Image Processing</p>
       </div>
       <div class="entry">
         <div class="entry-header">
-          <h3>Bachelor of Science in Marine Biology</h3>
+          <h3>Bachelor of Science in Marine Technology</h3>
           <span class="muted">Sep 2015 – Jun 2019</span>
         </div>
         <p class="muted">Xiamen University</p>
+        <p class="muted">Coursework: Fundamental Computer Application, C Programming</p>
       </div>
     </section>
   </main>
