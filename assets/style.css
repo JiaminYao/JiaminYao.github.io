@@ -66,9 +66,12 @@ a:hover {
 .avatar {
   width: 80px;
   height: 80px;
+  min-width: 80px;
+  max-width: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--border);
+  display: block;
 }
 
 .site-header h1 {
