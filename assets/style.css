@@ -57,6 +57,20 @@ a:hover {
   border-bottom: 1px solid var(--border);
 }
 
+.header-intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
 .site-header h1 {
   margin: 0;
   font-size: 2.2rem;
