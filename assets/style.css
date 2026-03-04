@@ -127,22 +127,26 @@ a:hover {
 }
 
 .contact-icons {
-  display: inline-flex;
-  gap: 10px;
-  margin-left: 8px;
-  vertical-align: middle;
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
 }
 
 .contact-icons a {
-  color: var(--muted);
   display: inline-flex;
-  transition: color .2s;
+  transition: opacity .2s;
 }
 
 .contact-icons a:hover {
-  color: var(--accent);
+  opacity: 0.7;
   text-decoration: none;
 }
+
+.contact-icons a[aria-label="Phone"]    { color: #16a34a; }
+.contact-icons a[aria-label="Email"]    { color: #ea4335; }
+.contact-icons a[aria-label="GitHub"]   { color: #333; }
+.contact-icons a[aria-label="LinkedIn"] { color: #0a66c2; }
+.contact-icons a[aria-label="Resume"]   { color: #e65100; }
 
 /* =========
    Navigation Pills
@@ -228,6 +232,14 @@ a:hover {
 .entry ul {
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.pub-img {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 /* =========
