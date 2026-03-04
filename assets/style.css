@@ -158,6 +158,7 @@ a.contact-item:hover {
 .contact-item[aria-label="Resume"] svg   { color: #0a66c2; fill: #0a66c2; }
 .contact-item[aria-label="GitHub"] svg   { color: #0a66c2; fill: #0a66c2; }
 .contact-item[aria-label="LinkedIn"] svg { color: #0a66c2; fill: #0a66c2; }
+.contact-item[aria-label="Scholar"] svg  { color: #0a66c2; fill: #0a66c2; }
 
 /* =========
    Navigation Pills
