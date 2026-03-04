@@ -304,8 +304,8 @@ a.contact-item:hover {
 }
 
 .pub-img {
-  width: 400px;
-  min-width: 400px;
+  width: 450px;
+  min-width: 450px;
   border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
