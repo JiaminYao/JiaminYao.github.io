@@ -275,11 +275,11 @@ a.contact-item:hover {
 }
 
 .pub-btn {
-  padding: 4px 14px;
-  font-size: 0.82rem;
+  padding: 6px 16px;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--accent);
-  border: 1px solid var(--accent);
+  background: var(--accent-soft);
   border-radius: 20px;
   transition: background .2s, color .2s;
 }
