@@ -9,6 +9,7 @@
   --border: #e5e7eb;
   --accent: #4f46e5;
   --accent-soft: #eef2ff;
+  --sidebar-w: 280px;
 }
 
 /* =========
@@ -41,31 +42,38 @@ a:hover {
 }
 
 /* =========
-   Layout
+   Layout — Sidebar + Main
    ========= */
-.container {
-  width: min(960px, 92vw);
-  margin: 0 auto;
-  padding: 32px 0;
+.page-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 32px 24px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 32px 40px;
+  max-width: 880px;
 }
 
 /* =========
-   Header
+   Sidebar Elements
    ========= */
-.site-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header-intro {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .avatar {
   width: 100px;
   height: 100px;
@@ -75,11 +83,12 @@ a:hover {
   object-fit: cover;
   border: 2px solid var(--border);
   display: block;
+  margin-bottom: 12px;
 }
 
-.site-header h1 {
+.sidebar h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -88,9 +97,9 @@ a:hover {
   align-items: center;
   gap: 6px;
   vertical-align: middle;
-  margin-left: 10px;
-  padding: 3px 12px;
-  font-size: 0.7rem;
+  margin-left: 6px;
+  padding: 2px 10px;
+  font-size: 0.65rem;
   font-weight: 600;
   color: #15803d;
   background: #dcfce7;
@@ -103,8 +112,8 @@ a:hover {
 
 .badge-open::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background: #22c55e;
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
@@ -116,38 +125,35 @@ a:hover {
 }
 
 .subtitle {
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin: 4px 0 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.88rem;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 6px;
-  margin-bottom: 0;
+  margin: 10px 0 0;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
-.icon-location { color: #ef4444; }
+.icon-location { color: #ef4444; fill: #ef4444; }
 
 .contact-line {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 18px;
-  margin-top: 6px;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .contact-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   text-decoration: none;
 }
 
@@ -156,7 +162,6 @@ a.contact-item:hover {
   text-decoration: none;
 }
 
-.contact-item[aria-label="Phone"] svg    { color: #16a34a; fill: #16a34a; }
 .contact-item[aria-label="Email"] svg    { color: #0a66c2; fill: #0a66c2; }
 .contact-item[aria-label="Resume"] svg   { color: #0a66c2; fill: #0a66c2; }
 .contact-item[aria-label="GitHub"] svg   { color: #0a66c2; fill: #0a66c2; }
@@ -164,18 +169,18 @@ a.contact-item:hover {
 .contact-item[aria-label="Scholar"] svg  { color: #0a66c2; fill: #0a66c2; }
 
 /* =========
-   Navigation Pills
+   Navigation Pills (Sidebar)
    ========= */
 .nav-pills {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
 }
 
 .nav-pills a {
-  padding: 6px 16px;
-  font-size: 0.85rem;
+  padding: 6px 14px;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--accent);
   background: var(--accent-soft);
@@ -276,8 +281,8 @@ a.contact-item:hover {
 }
 
 .pub-img {
-  width: 400px;
-  min-width: 400px;
+  width: 200px;
+  min-width: 200px;
   border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
@@ -306,7 +311,7 @@ a.contact-item:hover {
 }
 
 /* =========
-   Skills — Tag Pills
+   Skills
    ========= */
 .skill-group {
   margin-bottom: 16px;
@@ -428,7 +433,6 @@ li:last-child {
    ========= */
 .footer {
   border-top: 1px solid var(--border);
-  background: var(--surface);
   padding: 24px 0;
   margin-top: 40px;
   color: var(--muted);
@@ -436,15 +440,36 @@ li:last-child {
 }
 
 /* =========
-   Responsive
+   Responsive — Mobile: stack sidebar on top
    ========= */
-@media (max-width: 640px) {
-  .site-header h1 {
-    font-size: 1.8rem;
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
   }
 
-  .nav-inner {
-    gap: 14px;
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 24px 20px;
+  }
+
+  .contact-line {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+
+  .nav-pills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    padding: 24px 20px;
   }
 
   .card {
