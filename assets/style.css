@@ -261,11 +261,33 @@ a.contact-item:hover {
 }
 
 .pub-img {
-  width: 300px;
-  min-width: 300px;
+  width: 200px;
+  min-width: 200px;
   border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
+}
+
+.pub-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pub-btn {
+  padding: 4px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  transition: background .2s, color .2s;
+}
+
+.pub-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* =========
