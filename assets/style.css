@@ -153,11 +153,11 @@ a.contact-item:hover {
   text-decoration: none;
 }
 
-.contact-item[aria-label="Phone"] svg    { color: #16a34a; }
-.contact-item[aria-label="Email"] svg    { color: #ea4335; }
-.contact-item[aria-label="Resume"] svg   { color: #e65100; }
-.contact-item[aria-label="GitHub"] svg   { color: #333; }
-.contact-item[aria-label="LinkedIn"] svg { color: #0a66c2; }
+.contact-item[aria-label="Phone"] svg    { color: #16a34a; fill: #16a34a; }
+.contact-item[aria-label="Email"] svg    { color: #ea4335; fill: #ea4335; }
+.contact-item[aria-label="Resume"] svg   { color: #e65100; fill: #e65100; }
+.contact-item[aria-label="GitHub"] svg   { color: #333;    fill: #333; }
+.contact-item[aria-label="LinkedIn"] svg { color: #0a66c2; fill: #0a66c2; }
 
 /* =========
    Navigation Pills
@@ -260,9 +260,9 @@ a.contact-item:hover {
 }
 
 .pub-img {
-  width: 240px;
-  min-width: 240px;
-  border-radius: 8px;
+  width: 80px;
+  min-width: 80px;
+  border-radius: 6px;
   border: 1px solid var(--border);
   display: block;
 }
