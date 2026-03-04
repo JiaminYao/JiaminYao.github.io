@@ -67,8 +67,7 @@ a:hover {
 .main-content {
   flex: 1;
   min-width: 0;
-  padding: 32px 40px;
-  max-width: 880px;
+  padding: 32px 48px;
 }
 
 /* =========
@@ -261,26 +260,40 @@ a.contact-item:hover {
 }
 
 .edu-logo {
-  margin-top: 6px;
-}
-
-.edu-logo {
   width: 50px;
   min-width: 50px;
   display: block;
+  margin-top: 8px;
 }
 
-.pub-row {
+.edu-logo-siue {
+  margin-top: 14px;
+}
+
+.pub-item {
   display: flex;
   gap: 20px;
   align-items: center;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  transition: border-color .2s, box-shadow .2s;
 }
 
-.pub-row h3 {
-  margin: 0;
+.pub-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 12px rgba(79, 70, 229, .08);
+  text-decoration: none;
 }
 
-.pub-row p {
+.pub-item strong {
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: block;
+}
+
+.pub-item p {
   margin: 6px 0 0;
 }
 
@@ -433,6 +446,41 @@ li:last-child {
 }
 
 /* =========
+   Back to Top
+   ========= */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s, transform .3s;
+  transform: translateY(10px);
+  z-index: 200;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: #3730a3;
+}
+
+/* =========
    Footer
    ========= */
 .footer {
@@ -484,7 +532,7 @@ li:last-child {
     grid-template-columns: 1fr;
   }
 
-  .pub-row {
+  .pub-item {
     flex-direction: column;
   }
 
