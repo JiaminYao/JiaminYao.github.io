@@ -259,6 +259,11 @@ a.contact-item:hover {
   align-items: flex-start;
 }
 
+.edu-row > div {
+  flex: 1;
+  min-width: 0;
+}
+
 .edu-logo {
   width: 50px;
   min-width: 50px;
@@ -278,6 +283,7 @@ a.contact-item:hover {
   border: 1px solid var(--border);
   border-radius: 12px;
   color: var(--text);
+  cursor: pointer;
   transition: border-color .2s, box-shadow .2s;
 }
 
