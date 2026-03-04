@@ -154,9 +154,9 @@ a.contact-item:hover {
 }
 
 .contact-item[aria-label="Phone"] svg    { color: #16a34a; fill: #16a34a; }
-.contact-item[aria-label="Email"] svg    { color: #ea4335; fill: #ea4335; }
-.contact-item[aria-label="Resume"] svg   { color: #e65100; fill: #e65100; }
-.contact-item[aria-label="GitHub"] svg   { color: #333;    fill: #333; }
+.contact-item[aria-label="Email"] svg    { color: #0a66c2; fill: #0a66c2; }
+.contact-item[aria-label="Resume"] svg   { color: #0a66c2; fill: #0a66c2; }
+.contact-item[aria-label="GitHub"] svg   { color: #0a66c2; fill: #0a66c2; }
 .contact-item[aria-label="LinkedIn"] svg { color: #0a66c2; fill: #0a66c2; }
 
 /* =========
