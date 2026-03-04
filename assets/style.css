@@ -268,12 +268,12 @@ a.contact-item:hover {
   width: 50px;
   min-width: 50px;
   display: block;
-  margin-top: 6px;
-  border-radius: 6px;
+  margin-top: 4px;
+  border-radius: 4px;
 }
 
 .exp-logo-siue {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .edu-row {
