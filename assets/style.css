@@ -75,10 +75,10 @@ a:hover {
    Sidebar Elements
    ========= */
 .avatar {
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  max-width: 100px;
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  max-width: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--border);
@@ -169,13 +169,13 @@ a.contact-item:hover {
 .contact-item[aria-label="Scholar"] svg  { color: #0a66c2; fill: #0a66c2; }
 
 /* =========
-   Navigation Pills (Sidebar)
+   Navigation Pills
    ========= */
 .nav-pills {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
 .nav-pills a {
@@ -258,6 +258,10 @@ a.contact-item:hover {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+}
+
+.edu-logo {
+  margin-top: 6px;
 }
 
 .edu-logo {
@@ -461,11 +465,6 @@ li:last-child {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 6px 16px;
-  }
-
-  .nav-pills {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .main-content {
