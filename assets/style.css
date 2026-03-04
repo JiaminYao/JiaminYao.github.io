@@ -249,6 +249,18 @@ a.contact-item:hover {
   margin-bottom: 0;
 }
 
+.edu-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.edu-logo {
+  width: 50px;
+  min-width: 50px;
+  display: block;
+}
+
 .pub-row {
   display: flex;
   gap: 20px;
