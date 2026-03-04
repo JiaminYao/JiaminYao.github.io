@@ -120,33 +120,44 @@ a:hover {
 }
 
 .contact-info {
-  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
-.contact-icons {
+.icon-location { color: #ef4444; }
+
+.contact-line {
   display: flex;
-  gap: 14px;
-  margin-top: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  margin-top: 6px;
 }
 
-.contact-icons a {
+.contact-item {
   display: inline-flex;
-  transition: opacity .2s;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-decoration: none;
 }
 
-.contact-icons a:hover {
+a.contact-item:hover {
   opacity: 0.7;
   text-decoration: none;
 }
 
-.contact-icons a[aria-label="Phone"]    { color: #16a34a; }
-.contact-icons a[aria-label="Email"]    { color: #ea4335; }
-.contact-icons a[aria-label="GitHub"]   { color: #333; }
-.contact-icons a[aria-label="LinkedIn"] { color: #0a66c2; }
-.contact-icons a[aria-label="Resume"]   { color: #e65100; }
+.contact-item[aria-label="Phone"] svg    { color: #16a34a; }
+.contact-item[aria-label="Email"] svg    { color: #ea4335; }
+.contact-item[aria-label="Resume"] svg   { color: #e65100; }
+.contact-item[aria-label="GitHub"] svg   { color: #333; }
+.contact-item[aria-label="LinkedIn"] svg { color: #0a66c2; }
 
 /* =========
    Navigation Pills
@@ -234,12 +245,26 @@ a:hover {
   margin-bottom: 0;
 }
 
+.pub-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pub-row h3 {
+  margin: 0;
+}
+
+.pub-row p {
+  margin: 6px 0 0;
+}
+
 .pub-img {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 14px;
+  width: 240px;
+  min-width: 240px;
   border-radius: 8px;
   border: 1px solid var(--border);
+  display: block;
 }
 
 /* =========
@@ -395,5 +420,14 @@ li:last-child {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pub-row {
+    flex-direction: column;
+  }
+
+  .pub-img {
+    width: 100%;
+    min-width: 0;
   }
 }
