@@ -272,6 +272,10 @@ a.contact-item:hover {
   border-radius: 6px;
 }
 
+.exp-logo-siue {
+  margin-top: 12px;
+}
+
 .edu-row {
   display: flex;
   gap: 20px;
@@ -287,11 +291,11 @@ a.contact-item:hover {
   width: 50px;
   min-width: 50px;
   display: block;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .edu-logo-siue {
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .pub-item {
